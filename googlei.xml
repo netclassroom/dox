@@ -75,7 +75,7 @@ bridge
         bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
         let unityLoader = document.createElement('script')
-        unityLoader.src = 'Build/ObbyCarts.loader.js'
+        unityLoader.src = 'https://cdn.jsdelivr.net/gh/netclassroom/dox@main/Build/ObbyCarts.loader.js'
         unityLoader.onload = () => {
 
             // === ObbyCarts.wasm.br parçalarını birleştir ===
@@ -886,6 +886,7 @@ bridge
 
 </body>
 </html>
+
 
 
 ]]></Content>
